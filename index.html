@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>BuhOne</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:100,300,400,700,900|Roboto:100,300,400,700,900&display=swap&subset=cyrillic">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header-menu">
+			<div class="header-menu__wrap">
+				<div class="button_wrap"><button class="close" id="close">x</button></div>
+				<div class="menu-li">
+						<ul>
+							<li class="li"><a href="#header">Главная</a></li>
+							<li class="li"><a href="#service">Услуги</a></li>
+							<li class="li"><a href="#">Кейсы</a></li>
+							<li class="li"><a href="#">О компании</a></li>
+							<li class="li"><a href="#contacts">Контакты</a></li>
+						</ul>
+						<ul>
+							<li class="li"><a href="tel:+81112223344">8 (111) 222-33-44</a></li>
+							<li class="li">Пн-Пт 10:00-18:00</li>
+							<li class="li"><a href="mailto:order@buhone.ru">order@buhone.ru</a></li>
+							<li class="li"><a href="https://goo.gl/maps/bmK8ZCkprXowYVjw5" target="_blank">Невский пр. 130</a>
+							</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+		<a name="header"></a>
+		<div class="header-content">
+			<div class="header-fix">
+				<div class="header-top__wrap">
+					<div class="header__logo">
+						<img src="img/logo.svg" alt="BuhOne">
+						<p>BuhOne</p>
+					</div>
+					<div class="header-nav__wrap">
+						<div class="header-contact">
+							<ul class="header-contact__items">
+								<li class="header-contact__item icon"><a href="tel:+81112223344">8 (111) 222-33-44</a></li>
+								<li class="header-contact__item">Пн-Пт 10:00-18:00</li>
+								<li class="header-contact__item"><a href="mailto:order@buhone.ru">order@buhone.ru</a></li>
+								<li class="header-contact__item"><a href="https://goo.gl/maps/bmK8ZCkprXowYVjw5" target="_blank">Невский пр. 130</a></li>
+							</ul>
+						</div>
+						<div class="header-nav">
+							<ul class="header-nav__items">
+								<li class="header-nav__item"><a href="#header">Главная</a></li>
+								<li class="header-nav__item"><a href="#service">Услуги</a></li>
+								<li class="header-nav__item"><a href="#">Кейсы</a></li>
+								<li class="header-nav__item"><a href="#">О компании</a></li>
+								<li class="header-nav__item"><a href="#contacts">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<button class="open" id="open">=</button>
+				</div>
+			</div>
+			<div class="header-slide">
+				<div class="header-slide__items">
+					<div class="header-slide__item">
+						<div class="slide__img">
+							<img src="img/header-slide.jpg" alt="#">
+							<div class="slide-mask">
+							</div>
+						</div>
+						<div class="slide-text__wrap">
+							<div class="slide-text">
+								<div class="slide-text__content">
+									<h1>Бухгалтерские услуги в Санкт-Петербурге</h1>
+									<a href="#" class="button button-slide">Наша презентация</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-slide__item">
+						<div class="slide__img">
+							<img src="img/header-slide1.jpg" alt="#">
+							<div class="slide-mask">
+							</div>
+						</div>
+						<div class="slide-text__wrap">
+							<div class="slide-text">
+								<div class="slide-text__content">
+									<h1>Бухгалтерские услуги в Москве</h1>
+									<a href="#" class="button button-slide">Наша презентация</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-slide__item">
+						<div class="slide__img">
+							<img src="img/header-slide.jpg" alt="#">
+							<div class="slide-mask">
+							</div>
+						</div>
+						<div class="slide-text__wrap">
+							<div class="slide-text">
+								<div class="slide-text__content">
+									<h1>Бухгалтерские услуги в Самаре</h1>
+									<a href="#" class="button button-slide">Наша презентация</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-slide__item">
+						<div class="slide__img">
+							<img src="img/header-slide1.jpg" alt="#">
+							<div class="slide-mask">
+							</div>
+						</div>
+						<div class="slide-text__wrap">
+							<div class="slide-text">
+								<div class="slide-text__content">
+									<h1>Бухгалтерские услуги в Тольятти</h1>
+									<a href="#" class="button button-slide">Наша презентация</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide-buttons__wrap">
+					<div class="slide-buttons">
+						<div class="dots">
+							<span></span>
+						</div>
+						<div class="buttons">
+							<button class="button__slide button__slideheader button-prev" id="prev" onclick="prevSlide()"></button>
+							<button class="button__slide button__slideheader button-next" id="next" onclick="nextSlide()"></button>
+						</div>
+					</div>
+				</div>
+				
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="service">
+		<a name="service"></a>
+		<div class="container">
+			<div class="content-service">
+				<h2>Наши услуги</h2>
+				<h3>Мы специализируемся</h3>
+				<div class="accounting-service__items">
+					<div class="accounting-service__item">
+						<a href="#">
+							<img src="img/service.jpg" alt="">
+							<p class="item__content">Бухгалтерское обслуживание</p>
+							<div class="mask"></div>
+						</a>
+					</div>
+					<div class="accounting-service__item">
+						<a href="#">
+							<img src="img/service.jpg" alt="">
+							<p class="item__content">Бухгалтерское обслуживание</p>
+							<div class="mask"></div>
+						</a>
+					</div>
+					<div class="accounting-service__item">
+						<a href="#">
+							<img src="img/service.jpg" alt="">
+							<p class="item__content">Бухгалтерское обслуживание</p>
+							<div class="mask"></div>
+						</a>
+					</div>
+					<div class="accounting-service__item">
+						<a href="#">
+							<img src="img/service.jpg" alt="">
+							<p class="item__content">Бухгалтерское обслуживание</p>
+							<div class="mask"></div>
+						</a>
+					</div>
+					<div class="accounting-service__item">
+						<a href="#">
+							<img src="img/service.jpg" alt="">
+							<p class="item__content">Бухгалтерское обслуживание</p>
+							<div class="mask"></div>
+						</a>
+					</div>
+					<div class="accounting-service__item">
+						<a href="#">
+							<img src="img/service.jpg" alt="">
+							<p class="item__content">Бухгалтерское обслуживание</p>
+							<div class="mask"></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="comments">
+		<div class="container">
+			<div class="comments__wrap">
+				<div class="slider-comment">
+					<h2>Отзывы</h2>
+					<h3>Ваши благодарности</h3>
+						<div class="slider-comment__items">
+							<div class="slider-comment__item">
+								<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+								текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм
+								шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+								вэб-дизайне.</p>
+								<div class="comment-author">
+									<div class="comment-author__img">
+										<img id="img" src="img/author-comment.jpg" alt="">
+									</div>
+									<div class="comment-author__text">
+										<p><strong>Екатерина Иванова</strong></p>
+										<p><span>Директор ООО “Раз-два”</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="slider-comment__item">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime doloribus ullam, amet dolor, architecto sunt at ut ratione, repudiandae similique laborum vel deleniti delectus alias accusantium? Voluptatibus assumenda minima consequuntur numquam, maiores sapiente. Ab recusandae ipsam earum dolore iusto maiores culpa quasi dolorem voluptatem, nam cupiditate voluptates, veniam minima.</p>
+								<div class="comment-author">
+									<div class="comment-author__img">
+										<img id="img" src="img/author-comment1.jpg" alt="">
+									</div>
+									<div class="comment-author__text">
+										<p><strong>Анастасия Петрова</strong></p>
+										<p><span>Директор ООО “Два-три”</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="slider-comment__item">
+								<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
+									для
+									текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм
+									шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати
+									и
+									вэб-дизайне.</p>
+								<div class="comment-author">
+									<div class="comment-author__img">
+										<img id="img" src="img/author-comment.jpg" alt="">
+									</div>
+									<div class="comment-author__text">
+										<p><strong>Екатерина Иванова</strong></p>
+										<p><span>Директор ООО “Раз-два”</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="slider-comment__item">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime doloribus ullam, amet dolor, architecto
+									sunt at ut ratione, repudiandae similique laborum vel deleniti delectus alias accusantium? Voluptatibus assumenda
+									minima consequuntur numquam, maiores sapiente. Ab recusandae ipsam earum dolore iusto maiores culpa quasi dolorem
+									voluptatem, nam cupiditate voluptates, veniam minima.</p>
+								<div class="comment-author">
+									<div class="comment-author__img">
+										<img id="img" src="img/author-comment1.jpg" alt="">
+									</div>
+									<div class="comment-author__text">
+										<p><strong>Анастасия Петрова</strong></p>
+										<p><span>Директор ООО “Два-три”</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				<div class="slide-buttons__wrap comments-buttons">
+					<div class="slide-buttons">
+						<div class="dots-comment">
+							<span></span>
+						</div>
+						<div class="buttons">
+							<button class="button__slide button__slidecomment button-prev" id="prev" onclick="prevSlideCom()"></button>
+							<button class="button__slide button__slidecomment button-next" id="next" onclick="nextSlideCom()"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contacts">
+		<a name="contacts"></a>
+		<div class="container">
+			<div class="contacts__wrap">
+				<div class="contact">
+					<h3>Связь с нами</h3>
+					<p class="contact-content">У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</p>
+					<div class="contact-link">
+						<a href="tel:+71112223344">+7 (111) 222-33-44</a>
+						<a href="mailto:order@bu-one.ru">order@bu-one.ru</a>
+					</div>
+				</div>
+				<div class="contact-form">
+					<form action="#" method="post">
+						<div class="contact-names">
+							<div class="contact-form__name">
+								<p class="form-legend">Имя</p>
+								<input type="text" name="name" id="name" placeholder="Иван">
+							</div>
+							<div class="contact-form__l-name">
+								<p class="form-legend">Фамилия</p>
+								<input type="text" name="l-name" id="l-name" placeholder="Иванов">
+							</div>
+						</div>
+						<p class="form-legend">Сообщение</p>
+						<textarea name="text-form" id="text-form" placeholder="Ваше сообщение"></textarea>
+						<button class="button button-form" type="submit">Отправить сообщение</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="contacts-mask">
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer">
+				<p>2019 &#169; Все права защищены. <a href="#">БухОне.ру</a></p>
+				<p>Разработано: <a href="#">BuhOne.ru</a></p>
+			</div>
+		</div>
+	</footer>
+
+
+
+<script src="js/index.js"></script>
+</body>
+</html>
