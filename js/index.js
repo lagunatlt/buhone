@@ -97,6 +97,9 @@ var bodyBgr = document.querySelector('#body-bgr')
 var headerMenu = document.querySelector('.header-menu')
 function close() {
 	headerMenu.style.right = '-400px';
+	bodyBgrClose();
+}
+function bodyBgrClose() {
 	body.style.overflow = "auto";
 	bodyBgr.style.backgroundColor = "transparent";
 	bodyBgr.style.opacity = "1";
@@ -114,6 +117,7 @@ var li = document.querySelectorAll('.li')
 var liLeng
 for (liLeng = 0; liLeng < li.length; liLeng++){
 	li[liLeng].addEventListener('click', function(){
-		headerMenu.style.right = '-400px'
+		headerMenu.style.right = '-400px';
+		bodyBgrClose();
 	})
 }
