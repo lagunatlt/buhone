@@ -18,6 +18,7 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  position: relative;
 }
 
 h1 {
@@ -111,7 +112,7 @@ header {
   position: fixed;
   top: 0;
   padding-top: 10px;
-  z-index: 1000;
+  z-index: 1;
   background-color: #F9F9F9;
   width: 100%;
   border-bottom: 1px solid grey;
@@ -1270,5 +1271,16 @@ input, #text-form {
   #text-form {
     margin-bottom: 15px;
   }
+}
+
+.body-brg {
+  -webkit-transition: all 0.5s ease-in 0s;
+  transition: all 0.5s ease-in 0s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */

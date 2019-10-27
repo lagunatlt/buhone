@@ -90,13 +90,25 @@ function showSlidesCom(a) {
 	slideComment.children[sc - 1].style.display = "block"
 	dotsComment.children[sc - 1].className += " active"
 }
+// --------------------
 var close = document.querySelector('#close').addEventListener('click', close)
+var body = document.querySelector('#body')
+var bodyBgr = document.querySelector('#body-bgr')
 var headerMenu = document.querySelector('.header-menu')
 function close() {
-	headerMenu.style.right = '-400px'}
+	headerMenu.style.right = '-400px';
+	body.style.overflow = "auto";
+	bodyBgr.style.backgroundColor = "transparent";
+	bodyBgr.style.opacity = "1";
+	bodyBgr.style.zIndex = "-1";
+}
 var open = document.querySelector('#open').addEventListener('click', open)
 function open() {
-	headerMenu.style.right = '0'
+	headerMenu.style.right = '0';
+	body.style.overflow = "hidden";
+	bodyBgr.style.backgroundColor = "#000000";
+	bodyBgr.style.zIndex = "1000";
+	bodyBgr.style.opacity = "0.6";
 }
 var li = document.querySelectorAll('.li')
 var liLeng
@@ -105,8 +117,3 @@ for (liLeng = 0; liLeng < li.length; liLeng++){
 		headerMenu.style.right = '-400px'
 	})
 }
-// li.forEach(function(liClose){
-// 	liClose.addEventListener('click', function() {
-// 		headerMenu.style.right = '-400px'
-// 	})
-// })
